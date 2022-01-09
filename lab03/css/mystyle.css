@@ -1,0 +1,74 @@
+
+body {
+    font-family: arial;
+    background-color: rgb(185, 179, 175);
+
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    
+
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: red;
+}
+  
+  .headerandmid h1{
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  
+  .portfolil p{
+    color: rgb(98, 21, 197);
+    text-align: center;
+  }
+  div.Content {
+    text-align: center;
+  }
+  
+  .Content p {
+    background-color: #ffe6e1;
+  
+  }
+  
+  .bottom-content {
+    background-color: #efe5ee;
+    height: 600px;
+  }
+  
+ 
+  .bottom-content .bottom-content-text p {
+    text-align:center;
+  }
+  
+  .bottom-content-text .bottom_content_province{
+    text-align: center;
+    padding-top: 24px;
+  }
+  
+  .bottom-content .bottom_border {
+    border:5px solid #000b11;
+    margin: 24px 550px 0px 550px;
+    text-align: center;
+  }   
+
+  
+  .headerandmid .footer {
+    background-color: #f7d2ef;
+    color: rgb(228, 21, 21);
+    height: 150px;
+    padding-top: 50px;
+    text-align: center;
+  }
+  
+  
