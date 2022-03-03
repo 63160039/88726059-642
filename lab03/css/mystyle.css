@@ -46,7 +46,10 @@ a:hover, a:active {
     height: 600px;
   }
   
- 
+  .bottom-content .bottom-content-text h1 {
+    padding-top: 80px;
+    text-align:center;
+  }
   .bottom-content .bottom-content-text p {
     text-align:center;
   }
