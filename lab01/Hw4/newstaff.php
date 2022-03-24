@@ -26,19 +26,20 @@ if ($_POST){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style = "background-color:#B3DBD8">
     <div class="container">
         <h1>Add Employee</h1>
         <form action="newstaff.php" method="post">
             <div class="form-group">
-                <label for="stf_code">รหัสพนักงานEmployee</label>
-                <input type="text" class="form-control" name="stf_code" id="stf_code">
+                <label for="stf_code">ID</label>
+                <input type="text" class="form-control" name="stf_code" id="stf_code" style = "background-color:#80cbc4">
             </div>
             <div class="form-group">
-                <label for="stf_name">ชื่อพนักงานEmployee Name</label>
-                <input type="text" class="form-control" name="stf_name" id="stf_name">
+                <label for="stf_name">Employee Name</label>
+                <input type="text" class="form-control" name="stf_name" id="stf_name" style = "background-color:#80cbc4">
             </div>
-            <button type="submit" class="btn btn-success">Save</button>
+            <button type="button" class="btn btn-warning" onclick="history.back();"  style = "background-color:#283593">Back</button>
+            <button type="submit" class="btn btn-success" style = "background-color:#7986cb">Save</button>
         </form>
 </body>
 

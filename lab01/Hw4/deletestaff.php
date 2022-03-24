@@ -34,16 +34,16 @@ if ($_POST){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style = "background-color:#B3DBD8">
     <div class="container">
         <h1>Delete Employee</h1>
         <table class="table table-hover">
             <tr>
-                <th style='width:120px'>รหัสพนักงาน(Employee)</th>
+                <th style='width:120px'>ID</th>
                 <td><?php echo $row->stf_code;?></td>
             </tr>
             <tr>
-                <th>ชื่อพนักงาน(Employee name)</th>
+                <th>Employee name</th>
                 <td><?php echo $row->stf_name;?></td>
             </tr>
             <tr>
@@ -51,8 +51,8 @@ if ($_POST){
         </table>
         <form action="deletestaff.php" method="post">
             <input type="hidden" name="id" value="<?php echo $row->id;?>">
-            <input type="submit" value="Confirm delete" class="btn btn-danger">
-            <button type="button" class="btn btn-warning" onClick="window.history.back()">Cancel Delete</button>
+            <input type="submit" value="Confirm delete" class="btn btn-danger"  style = "background-color:#283593">
+            <button type="button" class="btn btn-warning" onClick="window.history.back()" style = "background-color:#7986cb">Cancel Delete</button>
         </form>
 </body>
 

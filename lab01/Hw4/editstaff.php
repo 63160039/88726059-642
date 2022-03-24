@@ -41,21 +41,21 @@ if ($_POST){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style = "background-color:#B3DBD8" >
     <div class="container">
         <h1>Edit Employee</h1>
         <form action="editstaff.php" method="post">
             <div class="form-group">
-                <label for="stf_code">รหัสพนักงาน</label>
-                <input type="text" class="form-control" name="stf_code" id="stf_code" value="<?php echo $row->stf_code;?>">
+                <label for="stf_code">ID</label>
+                <input type="text" class="form-control" name="stf_code" id="stf_code" value="<?php echo $row->stf_code;?>" style = "background-color:#80cbc4">
             </div>
             <div class="form-group">
-                <label for="stf_name">ชื่อพนักงาน</label>
-                <input type="text" class="form-control" name="stf_name" id="stf_name" value="<?php echo $row->stf_name;?>">
+                <label for="stf_name">Employee</label>
+                <input type="text" class="form-control" name="stf_name" id="stf_name" value="<?php echo $row->stf_name;?>" style = "background-color:#80cbc4">
             </div>
             
             <input type="hidden" name="id" value="<?php echo $row->id;?>">
-            <button type="submit" class="btn btn-success">Update</button>
+            <button type="submit" class="btn btn-success" style = "background-color:#7986cb">Update</button>
         </form>
 </body>
 

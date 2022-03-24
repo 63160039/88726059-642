@@ -10,13 +10,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style = "background-color:#B3DBD8" >
     <div class="container">
         <h1>Employee | <a href='newstaff.php'><span class='glyphicon glyphicon-plus'></span></a> 
         <a href='documents.php'><span class='glyphicon glyphicon-arrow-left'></span></a></h1>
         <form action="#" method="post">
-            <input type="text" name="kw" placeholder="Enter Order, Order name" value="">
-            <input type="submit">
+            <input type="text" name="kw" placeholder="Enter Order, Order name" value=""  style = "background-color:#BEABA7">
+            <input type="submit"  style = "background-color:#ab47bc">
         </form>
 
         <?php

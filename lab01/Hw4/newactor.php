@@ -43,36 +43,39 @@ if ($_POST){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style = "background-color:#B3DBD8">
     <div class="container">
         <h1>Add Order</h1>
         <form action="newactor.php" method="post">
             <div class="form-group">
-                <label for="doc_num">เลขที่(Order)</label>
-                <input type="text" class="form-control" name="doc_num" id="doc_num">
+                <label for="doc_num">Order</label>
+                <input type="text" class="form-control" name="doc_num" id="doc_num" style = "background-color:#80cbc4">
             </div>
             <div class="form-group">
-                <label for="doc_title">ชื่อคำสั่ง(Order Name)</label>
-                <input type="text" class="form-control" name="doc_title" id="doc_title">
+                <label for="doc_title">Order Name</label>
+                <input type="text" class="form-control" name="doc_title" id="doc_title" style = "background-color:#80cbc4">
             </div>
             <div class="form-group">
-                <label for="doc_start_date">วันที่เริ่ม(Start Date)</label>
-                <input type="text" class="form-control" name="doc_start_date" id="doc_start_date">
+                <label for="doc_start_date">Start Date</label>
+                <input type="text" class="form-control" name="doc_start_date" id="doc_start_date" style = "background-color:#80cbc4">
             </div>
             <div class="form-group">
-                <label for="doc_to_date">วันที่สุดท้าย(To Date)</label>
-                <input type="text" class="form-control" name="doc_to_date" id="doc_to_date">
+                <label for="doc_to_date">To Date</label>
+                <input type="text" class="form-control" name="doc_to_date" id="doc_to_date" style = "background-color:#80cbc4">
             </div>
             <div class="form-group">
-                <label for="doc_status">สถานะ(Status)</label>
-                <input type="text" class="form-control" name="doc_status" id="doc_status">
+                <label for="doc_status">Status</label>
+                <input type="radio"  name="doc_status" id="doc_status" value="Active"> Active
+                <br>&emsp;&emsp;&nbsp;&nbsp;
+               <input type="radio"  name="doc_status" id="doc_status" value="Expire">Expire
             </div>
             <div class="form-group">
-                <label for="doc_file_name">ชื่อไฟล์(File Name)</label>
-                <input type="text" class="form-control" name="doc_file_name" id="doc_file_name">
+                <label for="doc_file_name">File Name</label>
+                <input type="file" class="form-control" name="doc_file_name" id="doc_file_name" style = "background-color:#80cbc4">
             </div>
-            
-            <button type="submit" class="btn btn-success">Save</button>
+            <br>
+            <button type="button" class="btn btn-warning" onclick="history.back();" style = "background-color:#283593">Back</button>
+            <button type="submit" class="btn btn-success" style = "background-color:#7986cb">Save</button>
         </form>
 </body>
 

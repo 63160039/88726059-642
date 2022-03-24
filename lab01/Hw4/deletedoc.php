@@ -2,6 +2,15 @@
 require_once("dbconfig.php");
 if ($_POST){
     $id = $_POST['id'];
+
+    $sql = "DELETE 
+    FROM doc_staff
+    WHERE doc_staff.doc_id = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+
+
     $sql = "DELETE 
             FROM documents
             WHERE id = ?";
@@ -34,25 +43,26 @@ if ($_POST){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style = "background-color:#B3DBD8">
     <div class="container">
         <h1>Delete Order</h1>
         <table class="table table-hover">
             <tr>
-                <th style='width:120px'>เลขที่(Order)</th>
+                <th style='width:120px'>Order</th>
                 <td><?php echo $row->doc_num;?></td>
             </tr>
             <tr>
-                <th>ชื่อคำสั่ง(Order name)</th>
+                <th>Order name</th>
                 <td><?php echo $row->doc_title;?></td>
             </tr>
             <tr>
-
+           
+            
         </table>
         <form action="deletedoc.php" method="post">
             <input type="hidden" name="id" value="<?php echo $row->id;?>">
-            <input type="submit" value="Confirm delete" class="btn btn-danger">
-            <button type="button" class="btn btn-warning" onClick="window.history.back()">Cancel Delete</button>
+            <input type="submit" value="Confirm delete" class="btn btn-danger"  style = "background-color:#283593">
+            <button type="button" class="btn btn-warning" onClick="window.history.back()" style = "background-color:#7986cb">Cancel Delete</button>
         </form>
 </body>
 
