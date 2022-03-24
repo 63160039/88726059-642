@@ -10,12 +10,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style = "background-color:#B3DBD8">
     <div align =center class="container">
     <h1 align =right>ค้นหารายชื่อการแต่งตั้ง&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        <a href='document.php'><span class='glyphicon glyphicon-home'></span></a></h1>
+        <a href='documents.php'><span class='glyphicon glyphicon-home'></span></a></h1>
         <form align =center action="#" method="post">
-            <input type="text" name="kw" placeholder="Enter document name" value="" size=140>
+            <input type="text" name="kw" placeholder="Enter document name" value="" size=140 style = "background-color:#80cbc4">
             <button type="submit" class="glyphicon glyphicon-search btn btn-info"></button>
         </form>
 
@@ -43,12 +43,12 @@ ORDER BY doc_num;";
                         <thead>
                             <tr>
                                 <th scope='col'>#</th>
-                                <th scope='col'>เลขที่คำสั่ง</th>
-                                <th scope='col'>ชื่อคำสั่ง</th>
-                                <th scope='col'>วันที่เริ่มต้นคำสั่ง</th>
-                                <th scope='col'>วันที่สิ้นสุด</th>
-                                <th scope='col'>สถานะ</th>
-                                <th scope='col'>ชื่อไฟล์เอกสาร</th>
+                                <th scope='col'>Order</th>
+                                <th scope='col'>Order Name</th>
+                                <th scope='col'>Start Date</th>
+                                <th scope='col'>To Date</th>
+                                <th scope='col'>Status</th>
+                                <th scope='col'>File Name</th>
                             </tr>
                         </thead>
                         <tbody>";

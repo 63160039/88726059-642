@@ -50,7 +50,7 @@ if ($_POST){
     $result = $stmt->get_result();
 }
 ?>
-
+<body style = "background-color:#B3DBD8">
 <form action="addstafftodocument.php" method="post">
     <input type="hidden" name="id" value="<?php echo $doc_id; ?>">
     <?php
@@ -60,5 +60,5 @@ if ($_POST){
                 value="<?php echo $row->id; ?>"><?php echo $row->stf_name; ?></label>
     </div>
     <?php } ?>
-    <input type="submit">
-</form>
+    <input type="submit" style = "background-color:#7986cb">
+</form> </body >
