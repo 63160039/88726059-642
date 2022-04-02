@@ -1,4 +1,9 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['loggined'])){
+    header('Location: login.php');
+}
 require_once("dbconfig.php");
 
 // ตรวจสอบว่ามีการ post มาจากฟอร์ม ถึงจะเพิ่ม
@@ -27,8 +32,10 @@ if ($_POST){
     $stmt->bind_param("ssssss", $doc_num, $doc_title,$doc_start_date, $doc_to_date,$doc_status,$doc_file_name);
     $stmt->execute();
 
-    
     header("location: documents.php");
+}
+else{
+    echo "<div align = center><h1><span class='glyphicon glyphicon-heart-empty'> Welcome ".$_SESSION['stf_name'] . "</span></h1></div>";
 }
 ?>
 <!DOCTYPE html>

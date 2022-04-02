@@ -1,4 +1,9 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['loggined'])){
+    header('Location: login.php');
+}
 require_once("dbconfig.php");
 
 // ตรวจสอบว่ามีการ post มาจากฟอร์ม ถึงจะลบ
@@ -27,6 +32,7 @@ if ($_POST){
     $stmt->execute();
     $result = $stmt->get_result();
     $row = $result->fetch_object();
+    echo "<div align = center><h1><span class='glyphicon glyphicon-heart-empty'> Welcome ".$_SESSION['stf_name'] . "</span></h1></div>";
 }
 ?>
 <!DOCTYPE html>
